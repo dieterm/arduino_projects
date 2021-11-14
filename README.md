@@ -8,4 +8,6 @@ Sharing is caring :-)
 
 ## Table of content
 
-1. (Bathroom Ventilation)[badkamer_ventilator]
+1. [Bathroom Ventilation](badkamer_ventilator)
+
+Use Arduino to control a relais module using a switch.
