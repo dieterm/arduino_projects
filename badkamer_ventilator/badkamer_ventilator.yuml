@@ -1,0 +1,9 @@
+// {type:state}
+// {generate:true}
+
+(start)[Start]->(Ventilator Uit)
+(Ventilator Uit)[knop ingedrukt]->(Ventilator Aan)
+(Ventilator Aan)[knop ingedrukt \nOF\n timer verlopen]->(Ventilator Uit)
+(start)[Start]->(Timer Uit)
+(Timer Uit)[knop ingedrukt]->(Timer Aan)[Timer Verlopen/Schakel Ventilator uit]->(Timer Uit)
+(start)[Start]->(Knop niet ingedrukt)->(Knop ingedrukt)->(Knop niet ingedrukt)

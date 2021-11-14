@@ -1,0 +1,5 @@
+{
+  "board": "arduino:avr:uno",
+  "sketch": "badkamer_ventilator\\badkamer_ventilator.ino",
+  "port": "COM3"
+}

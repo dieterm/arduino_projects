@@ -1,0 +1,7 @@
+// {type:state}
+// {generate:true}
+
+// (start)[Start]->(Ventilator Uit)
+(Ventilatie Uit)[knop ingedrukt]->(Bepaal ventilatieduur|observeer indruktijd drukknop)
+(Bepaal ventilatieduur)[knop losgelaten]->(Ventilatie Aan|start timer)
+(Ventilatie Aan)[knop ingedrukt \nOF\n timer verlopen]->(Ventilatie Uit)

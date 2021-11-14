@@ -1,0 +1,24 @@
+als ventilator uitstaat:
+	drukknop wordt ingedrukt:
+		-> indien kort (<= 1sec)
+			ventilator gaat aan voor 5 minuten
+		-> indien langer (> 1 sec)
+			tel het aantal seconden dat drukknop ingedrukt is,
+			en vermenigvuldig met 60 om om te zetten naar minuten (dus bv. 5 sec = 5 minuten)
+			ventilator gaat dan aan voor X minuten (met X afhankelijk van druktijd op de knop)
+als venitlator aanstaat:
+	drukknop wordt ingedrukt (ongeacht hoe lang):
+		-> ventilator stopt
+
+Ventilator (=output):
+- aan
+- uit
+Drukknop (=input): 
+- pressed
+- released
+(event: press-state changed)
+Timer (input): 
+- off
+- on
+(event: timer expired)
+
